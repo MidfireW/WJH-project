@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charse
+    t="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS语法规范
+    </title>
+<style>
+/*选择器{样式}*/
+/*给谁改样式{改什么样式}*/
+
+p {
+/*属性：值；*/
+    color:blueviolet;
+    font-size: 20px;
+}
+div {
+        width: 65px;
+        height: 55px;
+        background: ren;
+    }
+/*类选择器口诀：样式点定义   结构类（class）调用  一个或多个  开发最常用*/
+.red{
+    width:150px;
+    height:150px;
+    color:red;
+
+}
+.blue{
+    width:150px;
+    height:150px;
+    background-color:blue;
+
+}
+.green{   
+    width:150px;
+    height:150px;
+    background-color:green;
+}
+
+.font0{
+    font-size:20px;
+}
+
+/* id选择器口诀：样式#定义，结构id调用 ，只能调用一次，别人切勿调用 */
+#red {
+    color:red;
+}
+
+/* 通配符选择器*可以把所有元素选出来更改样式，特殊情况下使用 */
+</style>
+
+</head>
+<body>
+    <p class="red">有点意思</p>
+    <p>没有意思</p>
+    <P>有大意思</P>
+
+<div  class=" blue font0">蓝色</div>
+<div  class=" green font0">绿色</div>
+<div  class=" blue font0">蓝色</div>
+    <div id="red">我是DIV</div>
+</body>
+</html>
